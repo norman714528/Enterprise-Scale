@@ -10,7 +10,7 @@
       "metadata": {
         "version": "2.1.0-deprecated",
         "category": "Encryption",
-        "source": "https://github.com/Azure/Enterprise-Scale/",
+        "source": "https://github.com/ccc714528/Enterprise-Scale/",
         "deprecated": true,
         "supersededBy": "Enforce-EncryptTransit_20240509",
         "alzCloudEnvironments": [
