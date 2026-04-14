@@ -5836,30 +5836,6 @@
                                     "visible": true
                                 },
                                 {
-                                    "name": "denyHttpIngressForAks",
-                                    "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "Ensure HTTPS ingress is enforced in Kubernetes clusters",
-                                    "defaultValue": "Yes (recommended)",
-                                    "toolTip": "If 'Yes' is selected, HTTPS ingress will be required in AKS. Uses the policy https://www.azadvertizer.net/azpolicyadvertizer/1a5b4dca-0b6f-4cf5-907c-56316bc1bf3d.html (Kubernetes clusters should be accessible only over HTTPS).",
-                                    "constraints": {
-                                        "allowedValues": [
-                                            {
-                                                "label": "Yes (recommended)",
-                                                "value": "Yes"
-                                            },
-                                            {
-                                                "label": "Audit only",
-                                                "value": "Audit"
-                                            },
-                                            {
-                                                "label": "No",
-                                                "value": "No"
-                                            }
-                                        ]
-                                    },
-                                    "visible": true
-                                },
-                                {
                                     "name": "enableVmBackup",
                                     "type": "Microsoft.Common.OptionsGroup",
                                     "label": "Ensure Azure VMs (Windows & Linux) are enabled for Azure Backup",
@@ -10989,7 +10965,6 @@
                 "enableVmHybridMonitoring": "[steps('landingZones').lzSection.enableVmHybridMonitoring]",
                 "denyAksPrivileged": "[steps('landingZones').lzSection.denyAksPrivileged]",
                 "denyAksPrivilegedEscalation": "[steps('landingZones').lzSection.denyAksPrivilegedEscalation]",
-                "denyHttpIngressForAks": "[steps('landingZones').lzSection.denyHttpIngressForAks]",
                 "enableVmBackup": "[steps('landingZones').lzSection.enableVmBackup]",
                 "denyMgmtPorts": "[steps('landingZones').lzSection.denyMgmtPorts]",
                 "denySubnetWithoutNsg": "[steps('landingZones').lzSection.denySubnetWithoutNsg]",
