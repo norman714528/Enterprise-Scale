@@ -575,17 +575,6 @@
         "groupNames": []
       },
       {
-        "policyDefinitionReferenceId": "AKSIngressHttpsOnlyEffect",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1a5b4dca-0b6f-4cf5-907c-56316bc1bf3d",
-        "definitionVersion": "8.*.*",
-        "parameters": {
-          "effect": {
-            "value": "[[parameters('AKSIngressHttpsOnlyEffect')]"
-          }
-        },
-        "groupNames": []
-      },
-      {
         "policyDefinitionReferenceId": "MySQLEnableSSLDeployEffect",
         "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deploy-MySQL-sslEnforcement",
         "definitionVersion": "1.*.*",
