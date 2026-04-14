@@ -120,19 +120,6 @@
             "Deny"
           ]
         },
-        "AKSIngressHttpsOnlyEffect": {
-          "metadata": {
-            "displayName": "AKS Service. Enforce HTTPS ingress in Kubernetes cluster",
-            "description": "This policy enforces HTTPS ingress in a Kubernetes cluster. This policy is generally available for Kubernetes Service (AKS), and preview for AKS Engine and Azure Arc enabled Kubernetes. For instructions on using this policy, visit https://aka.ms/kubepolicydoc."
-          },
-          "type": "String",
-          "defaultValue": "Deny",
-          "allowedValues": [
-            "Audit",
-            "Deny",
-            "Disabled"
-          ]
-        },
         "MySQLEnableSSLDeployEffect": {
           "type": "String",
           "defaultValue": "DeployIfNotExists",
@@ -447,16 +434,6 @@
           "parameters": {
             "effect": {
               "value": "[[parameters('WebAppServiceHttpsEffect')]"
-            }
-          },
-          "groupNames": []
-        },
-        {
-          "policyDefinitionReferenceId": "AKSIngressHttpsOnlyEffect",
-          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1a5b4dca-0b6f-4cf5-907c-56316bc1bf3d",
-          "parameters": {
-            "effect": {
-              "value": "[[parameters('AKSIngressHttpsOnlyEffect')]"
             }
           },
           "groupNames": []
