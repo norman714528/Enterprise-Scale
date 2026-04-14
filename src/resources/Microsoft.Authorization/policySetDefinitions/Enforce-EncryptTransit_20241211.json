@@ -10,7 +10,7 @@
     "metadata": {
       "version": "1.2.2",
       "category": "Encryption",
-      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "source": "https://github.com/ccc714528/Enterprise-Scale/",
       "replacesPolicy": "Enforce-EncryptTransit_20240509",
       "alzCloudEnvironments": [
         "AzureCloud",
